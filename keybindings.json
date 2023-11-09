@@ -2,43 +2,42 @@
 // https://code.visualstudio.com/docs/customization/keybindings
 [
 //---- Made by Sinisa Milivojevic
-// http:// sinisa.cyprus.com 
+// http://sinisa.cyprus.com 
+// https://github.com/SinisaMil/Sinisa_Hack
 
 // ABSOLUTELY requires Multi-Line extension for VS Code
 
 // This WordStar / Borland keyboard mapping requires these extensions : vscode-selection-flip && multi-command
+// https://marketplace.visualstudio.com/items?itemName=mlewand.vscode-selection-flip
+// https://marketplace.visualstudio.com/items?itemName=ryuta46.multi-command
 
 // simple navigation
 
 { "key": "ctrl+e",                "command": "cursorUp", "when": "editorTextFocus" },
 { "key": "shift+ctrl+e",          "command": "cursorUpSelect", "when": "editorTextFocus" },
-{ "key": "ctrl+e",                "command": "showPrevParameterHint", "when": "editorTextFocus && parameterHintsVisible" },
-{ "key": "ctrl+e",                "command": "selectPrevQuickFix", "when": "editorFocus && quickFixWidgetVisible" },
-{ "key": "ctrl+e",                "command": "selectPrevSuggestion", "when": "editorTextFocus && suggestWidgetVisible" },
 
+{ "key": "ctrl+e",                "command": "showPrevParameterHint", "when": "editorTextFocus && parameterHintsVisible" },
+
+{ "key": "ctrl+e",                "command": "selectPrevQuickFix", "when": "editorFocus && quickFixWidgetVisible" },
+
+{ "key": "ctrl+e",                "command": "selectPrevSuggestion", "when": "editorTextFocus && suggestWidgetVisible" },
 
 { "key": "ctrl+s",                "command": "cursorLeft", "when": "editorTextFocus" },
 { "key": "shift+ctrl+s",          "command": "cursorLeftSelect", "when": "editorTextFocus" },
 
-
 { "key": "ctrl+d",                "command": "cursorRight", "when": "editorTextFocus" },
 { "key": "shift+ctrl+d",          "command": "cursorRightSelect", "when": "editorTextFocus" },
-
-
 
 { "key": "ctrl+x",                "command": "cursorDown", "when": "editorTextFocus" },
 { "key": "shift+ctrl+x",          "command": "cursorDownSelect", "when": "editorTextFocus" },
 { "key": "ctrl+x",                "command": "showNextParameterHint", "when": "editorTextFocus && parameterHintsVisible" },
-
 { "key": "ctrl+x",                "command": "selectNextQuickFix", "when": "editorFocus && quickFixWidgetVisible" },
 { "key": "ctrl+x",                "command": "selectNextSuggestion", "when": "editorTextFocus && suggestWidgetVisible" },
                                      
-{"key": "ctrl+w",                 "command": "scrollLineUp", "when": "editorTextFocus" },
-
-{"key": "ctrl+z",                 "command": "scrollLineDown", "when": "editorTextFocus" },
+{ "key": "ctrl+w",                "command": "scrollLineUp", "when": "editorTextFocus" },
+{ "key": "ctrl+z",                "command": "scrollLineDown", "when": "editorTextFocus" },
 
 // undo 
-
 { "key": "ctrl+u",                "command": "undo", "when": "editorTextFocus" },
 
                                      
@@ -47,12 +46,10 @@
 // Original									 
 // ---- File commands
 
-{ "key": "ctrl+k  ctrl+s",           "command": "workbench.action.files.save" },
-
+{ "key": "ctrl+k  ctrl+s",      "command": "workbench.action.files.save" },
 { "key": "ctrl+k  s",           "command": "workbench.action.files.save" },
 
-{ "key": "ctrl+k ctrl+e",        "command": "workbench.action.files.openFile" },
-
+{ "key": "ctrl+k ctrl+e",   "command": "workbench.action.files.openFile" },
 { "key": "ctrl+k e",        "command": "workbench.action.files.openFile" },
 
 // Word and line navigation
@@ -66,14 +63,13 @@
 { "key": "ctrl+q s",         "command": "cursorHome", "when": "editorTextFocus" },
 
 { "key": "ctrl+k ctrl+j",    "command": "workbench.action.gotoLine", "when": "editorTextFocus" },
-{ "key": "ctrl+k j",    "command": "workbench.action.gotoLine", "when": "editorTextFocus" },
+{ "key": "ctrl+k j",         "command": "workbench.action.gotoLine", "when": "editorTextFocus" },
 
 { "key": "ctrl+q ctrl+i",    "command": "workbench.action.gotoLine", "when": "editorTextFocus" },
 { "key": "ctrl+q i",    "command": "workbench.action.gotoLine", "when": "editorTextFocus" },
 
 
-//  Find, Replace and repeat  検索・置換                                     
-
+//  Find, Replace and repeat  検索・置換
 
 { "key": "ctrl+q ctrl+f",         "command": "actions.find" },
 { "key": "ctrl+q ctrl+a",         "command": "editor.action.startFindReplaceAction", "when": "editorFocus  && !editorReadonly" },
@@ -84,8 +80,7 @@
 { "key": "ctrl+l",  "command": "editor.action.nextMatchFindAction", "when": "editorFocus  && !editorReadonly" }, 
 
 { "key": "ctrl+k ctrl+q", "command": "workbench.action.closeActiveEditor", "when": "editorFocus"}, 
-
-{ "key": "ctrl+k q", "command": "workbench.action.closeActiveEditor", "when": "editorFocus"}, 
+{ "key": "ctrl+k q",      "command": "workbench.action.closeActiveEditor", "when": "editorFocus"}, 
 
 
 
@@ -114,15 +109,12 @@
 
 
 { "key": "ctrl+k b", "command": "editor.action.setSelectionAnchor", "when": "editorTextFocus" },
-
 { "key": "ctrl+k ctrl+b", "command": "editor.action.setSelectionAnchor", "when": "editorTextFocus" },
 
 
 
-{ "key": "ctrl+k ctrl+y",         "command": "editor.action.clipboardCutAction",  "when": "editorTextFocus && !editorReadonly" },
-{ "key": "ctrl+k ctrl+c",         "command": "editor.action.clipboardPasteAction",  "when": "editorTextFocus && !editorReadonly" },
-
-
+{ "key": "ctrl+k ctrl+y",    "command": "editor.action.clipboardCutAction",  "when": "editorTextFocus && !editorReadonly" },
+{ "key": "ctrl+k ctrl+c",    "command": "editor.action.clipboardPasteAction",  "when": "editorTextFocus && !editorReadonly" },
 { "key": "ctrl+k y",         "command": "editor.action.clipboardCutAction",  "when":  "editorTextFocus && !editorReadonly"   }, 
 { "key": "ctrl+k c",         "command": "editor.action.clipboardPasteAction",  "when": "editorTextFocus && !editorReadonly" },
                                      
