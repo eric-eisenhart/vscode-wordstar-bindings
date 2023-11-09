@@ -43,7 +43,7 @@
 
 // -----------------------------
 
-// Original									
+// Original
 // ---- File commands
 
 { "key": "ctrl+k ctrl+s", "command": "workbench.action.files.save" },
