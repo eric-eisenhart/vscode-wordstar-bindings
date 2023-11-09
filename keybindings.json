@@ -2,7 +2,7 @@
 // https://code.visualstudio.com/docs/customization/keybindings
 [
 //---- Made by Sinisa Milivojevic
-// http://sinisa.cyprus.com 
+// http://sinisa.cyprus.com
 // https://github.com/SinisaMil/Sinisa_Hack
 
 // ABSOLUTELY requires Multi-Line extension for VS Code
@@ -17,7 +17,7 @@
 { "key": "shift+ctrl+e",  "command": "cursorUpSelect", "when": "editorTextFocus" },
 
 { "key": "ctrl+e",        "command": "showPrevParameterHint", "when": "editorTextFocus && parameterHintsVisible" },
- 
+
 { "key": "ctrl+e",        "command": "selectPrevQuickFix",    "when": "editorFocus && quickFixWidgetVisible" },
 
 { "key": "ctrl+e",        "command": "selectPrevSuggestion",  "when": "editorTextFocus && suggestWidgetVisible" },
@@ -33,17 +33,17 @@
 { "key": "ctrl+x",        "command": "showNextParameterHint", "when": "editorTextFocus && parameterHintsVisible" },
 { "key": "ctrl+x",        "command": "selectNextQuickFix",    "when": "editorFocus && quickFixWidgetVisible" },
 { "key": "ctrl+x",        "command": "selectNextSuggestion",  "when": "editorTextFocus && suggestWidgetVisible" },
-                                     
+
 { "key": "ctrl+w",        "command": "scrollLineUp",   "when": "editorTextFocus" },
 { "key": "ctrl+z",        "command": "scrollLineDown", "when": "editorTextFocus" },
 
-// undo 
+// undo
 { "key": "ctrl+u",        "command": "undo", "when": "editorTextFocus" },
 
-                                     
+
 // -----------------------------
 
-// Original									 
+// Original									
 // ---- File commands
 
 { "key": "ctrl+k ctrl+s", "command": "workbench.action.files.save" },
@@ -77,20 +77,20 @@
 { "key": "ctrl+q f",      "command": "actions.find" },
 { "key": "ctrl+q a",      "command": "editor.action.startFindReplaceAction" },
 
-{ "key": "ctrl+l",        "command": "editor.action.nextMatchFindAction", "when": "editorFocus  && !editorReadonly" }, 
+{ "key": "ctrl+l",        "command": "editor.action.nextMatchFindAction", "when": "editorFocus  && !editorReadonly" },
 
-{ "key": "ctrl+k ctrl+q", "command": "workbench.action.closeActiveEditor", "when": "editorFocus"}, 
-{ "key": "ctrl+k q",      "command": "workbench.action.closeActiveEditor", "when": "editorFocus"}, 
+{ "key": "ctrl+k ctrl+q", "command": "workbench.action.closeActiveEditor", "when": "editorFocus"},
+{ "key": "ctrl+k q",      "command": "workbench.action.closeActiveEditor", "when": "editorFocus"},
 
 
 
-//  Block operations .....  
+//  Block operations .....
 
 
 { "key": "ctrl+k ctrl+k", "command": "extension.multiCommand.execute",
     "args": {
        "sequence": [
-          "editor.action.selectFromAnchorToCursor", 
+          "editor.action.selectFromAnchorToCursor",
           "editor.action.clipboardCopyAction"
        ],
        "when": "editorTextFocus && selectionAnchorSet"
@@ -100,10 +100,10 @@
 { "key": "ctrl+k k",      "command": "extension.multiCommand.execute",
     "args": {
        "sequence": [
-          "editor.action.selectFromAnchorToCursor", 
+          "editor.action.selectFromAnchorToCursor",
           "editor.action.clipboardCopyAction"
        ],
-       "when": "editorTextFocus && selectionAnchorSet" 
+       "when": "editorTextFocus && selectionAnchorSet"
     }
 },
 
@@ -115,10 +115,10 @@
 
 { "key": "ctrl+k ctrl+y", "command": "editor.action.clipboardCutAction",   "when": "editorTextFocus && !editorReadonly" },
 { "key": "ctrl+k ctrl+c", "command": "editor.action.clipboardPasteAction", "when": "editorTextFocus && !editorReadonly" },
-{ "key": "ctrl+k y",      "command": "editor.action.clipboardCutAction",   "when": "editorTextFocus && !editorReadonly" }, 
+{ "key": "ctrl+k y",      "command": "editor.action.clipboardCutAction",   "when": "editorTextFocus && !editorReadonly" },
 { "key": "ctrl+k c",      "command": "editor.action.clipboardPasteAction", "when": "editorTextFocus && !editorReadonly" },
-                                     
-{ "key": "F4",            "command": "copyLinesDownAction", "when": "editorTextFocus && !editorReadonly" },                                     
+
+{ "key": "F4",            "command": "copyLinesDownAction", "when": "editorTextFocus && !editorReadonly" },
 { "key": "ctrl+k d",      "command": "copyLinesDownAction", "when": "editorTextFocus && !editorReadonly" },
 { "key":  "ctrl+k ctrl+d","command": "copyLinesDownAction", "when": "editorTextFocus && !editorReadonly" },
 
@@ -126,18 +126,18 @@
 { "key": "ctrl+h",        "command": "deleteLeft",      "when": "editorTextFocus" },
 { "key": "ctrl+g",        "command": "deleteRight",     "when": "editorTextFocus" },
 { "key": "ctrl+t",        "command": "deleteWordRight", "when": "textInputFocus && !editorReadOnly" },
-                                     
-// Further cursor movement operations 
+
+// Further cursor movement operations
 
 { "key": "ctrl+r",        "command": "cursorPageUp",   "when": "editorTextFocus" },
 { "key": "ctrl+c",        "command": "cursorPageDown", "when": "editorTextFocus" },
 { "key": "ctrl+q ctrl+r", "command": "cursorTop",      "when": "editorTextFocus" },
 { "key": "ctrl+q ctrl+c", "command": "cursorBottom",   "when": "editorTextFocus" },
 { "key": "ctrl+q ctrl+y", "command": "deleteAllRight", "when": "editorTextFocus" },
-                                     
+
 { "key": "ctrl+q r",      "command": "cursorTop",      "when": "editorTextFocus" },
 { "key": "ctrl+q c",      "command": "cursorBottom",   "when": "editorTextFocus" },
-{ "key": "ctrl+q y",      "command": "deleteAllRight", "when": "editorTextFocus" },                                     
+{ "key": "ctrl+q y",      "command": "deleteAllRight", "when": "editorTextFocus" },
 
 { "key": "ctrl+y",        "command": "editor.action.deleteLines",      "when": "editorTextFocus" },
 { "key": "ctrl+n",        "command": "editor.action.insertLineBefore", "when": "editorTextFocus" },
@@ -147,7 +147,7 @@
 { "key": "ctrl+shift+i",  "command": "outdent", "when": "editorTextFocus"},
 
 
-// The next set of  keybindings require extensions "Numbered Bookmarks" 
+// The next set of  keybindings require extensions "Numbered Bookmarks"
 
 { "key": "ctrl+k 1",      "command": "numberedBookmarks.toggleBookmark1", "when": "editorTextFocus" },
 { "key": "ctrl+k 2",      "command": "numberedBookmarks.toggleBookmark2", "when": "editorTextFocus" },
